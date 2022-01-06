@@ -1,0 +1,25 @@
+.tips-bar {
+    min-height: 500rpx;
+    text-align: center;
+    display: box;
+    box-pack: center;
+    box-orient: vertical;
+    padding: 30rpx;
+}
+
+.tips-img {
+    width: 250rpx;
+    height: 250rpx;
+}
+
+.onemsg {
+    font-size: 28rpx;
+    margin-top: 30rpx;
+    color: #666;
+}
+
+.twomsg {
+    color: #999;
+    font-size: 24rpx;
+    margin-top: 20rpx;
+}

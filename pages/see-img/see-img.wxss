@@ -1,0 +1,75 @@
+.poster-swiper {
+    height: 100vh;
+}
+
+.item-child {
+    box-sizing: border-box;
+}
+
+.poster-title {
+    font-size: 34rpx;
+    font-weight: 700;
+}
+
+.page-title {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.custom-bom {
+    position: fixed!important;
+    width: 100%;
+    left: 0;
+    bottom: 40rpx;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: none!important;
+    background: none!important;
+}
+
+.operation {
+    position: relative;
+    width: 100%;
+    font-size: 26rpx;
+    text-align: center;
+    color: #666;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: #fff;
+    border-bottom-left-radius: 10rpx;
+    border-bottom-right-radius: 10rpx;
+}
+
+.operation .iconfont {
+    position: relative;
+    top: 2rpx;
+}
+
+.operate {
+    position: fixed;
+    right: 30rpx;
+    bottom: 30%;
+    z-index: 999;
+    text-align: right;
+}
+
+.operate .li {
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 30rpx;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: rgba(0,0,0,.5);
+}
+
+.operate .li .iconfont {
+    font-size: 34rpx;
+}
+.current {
+    color: rgba(250,211,2,.8);
+    font-size: 28rpx;
+}

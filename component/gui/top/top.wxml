@@ -1,0 +1,7 @@
+<view class="g-class g-top-bar" style="padding-top:{{system.statusBarHeight}}px;background-color:{{background}};color:{{color}};">
+    <view class="g-top-title {{align}}">
+        <view bindtap="inGoBack" class="g-arrow left opacity" wx:if="{{isback}}"></view>
+        <view class="g-text">{{title}}</view>
+    </view>
+    <slot></slot>
+</view>

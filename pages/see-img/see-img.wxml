@@ -1,0 +1,23 @@
+<g-page autoX bom customtop titleplain top bomClass="custom-bom" cusClass="page-title" titlecolor="white" wx:if="{{imgData}}">
+    <view slot="con">
+        <swiper autoplay circular bindchange="inSwiperChange" class="poster-swiper" current="{{imgAct}}">
+            <swiper-item class="item-child" data-index="{{index}}" wx:for="{{imgData}}" wx:key="index">
+                <image webp mode="aspectFill" src="{{item.imageUrl}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="wrap" slot="bom">
+        <view class="ellipsis">
+            <text class="poster-title mr20" wx:if="{{posterTitle}}">{{posterTitle}}</text>
+            <text class="h6">(<text class="current">{{imgAct+1}}</text>/{{imgData.length}})</text>
+        </view>
+        <view class="operate">
+            <button class="base-btn li" openType="share">
+                <text class="iconfont icon-share"></text>
+            </button>
+            <view bindtap="inDownLoadImg" class="li">
+                <text class="iconfont icon-down"></text>
+            </view>
+        </view>
+    </view>
+</g-page>

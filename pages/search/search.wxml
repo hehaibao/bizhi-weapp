@@ -1,0 +1,35 @@
+<view class="page {{isIPX}} {{Android}}">
+    <view class="top-bar">
+        <page-title isprev="{{true}}" title="搜索"></page-title>
+        <g-search bindinclear="inClear" bindinsubmit="inConfirm" keyword="{{pageJson.tag}}" placeholder="请输入关键词搜索壁纸"></g-search>
+    </view>
+    <view class="content">
+        <scroll-view scrollY bindscrolltolower="inGetList" class="scroll-bar">
+            <view class="history-bar" wx:if="{{SearchHistory&&!listData.length&&!pageJson.tag.length}}">
+                <view class="h6 color-gray" style="margin-bottom: 30rpx;">最近搜索：</view>
+                <view class="history-box">
+                    <text bindtap="inQuickSearch" class="text opacity" data-keyword="{{item.keyword}}" wx:for="{{SearchHistory}}" wx:key="index">{{item.keyword}}</text>
+                </view>
+            </view>
+            <view class="wrap">
+                <view class="flex-bar flex-wrap item-img">
+                    <view class="col-6" wx:for="{{listData}}" wx:key="index">
+                        <view class="img-box">
+                            <image webp bindtap="inToSeeImg" class="img opacity" data-src="{{item.imageUrl}}" data-uuid="{{item.uuid}}" mode="aspectFill" src="{{item.imageUrl}}"></image>
+                            <view class="operation flex-bar">
+                                <view class="flex1 opacity">
+                                    <button class="base-btn" data-name="{{item.name}}" data-src="{{item.imageUrl}}" data-uuid="{{item.uuid}}" openType="share">
+                                        <text class="iconfont icon-share"></text> 分享</button>
+                                </view>
+                                <view bindtap="inDownImg" class="flex1 opacity base-btn" data-src="{{item.imageUrl}}">
+                                    <text class="iconfont icon-down"></text> 下载</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <tips onemsg="未找到相关壁纸" twomsg="换个关键词试一下吧..." wx:if="{{!state.loading&&!listData.length&&pageJson.tag.length}}"></tips>
+            <g-loading mode="box" show="{{state.loading&&pageJson.tag.length}}"></g-loading>
+        </scroll-view>
+    </view>
+</view>

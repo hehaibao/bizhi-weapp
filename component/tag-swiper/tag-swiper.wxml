@@ -1,0 +1,5 @@
+<scroll-view scrollX class="tag-scroll">
+    <view class="tag-bar">
+        <view bindtap="inTap" class="item-tag {{active==index?'active':''}}" data-index="{{index}}" wx:for="{{list}}" wx:key="index">{{item.name}}</view>
+    </view>
+</scroll-view>

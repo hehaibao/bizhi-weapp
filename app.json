@@ -1,0 +1,22 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/search/search",
+        "pages/see-img/see-img"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "每日换换",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+   
+    "usingComponents": {
+        "tips": "/component/tips/tips",
+        "g-page": "/component/g-page/g-page",
+        "g-top": "/component/gui/top/top",
+        "g-search": "/component/gui/search/search"
+    },
+    "sitemapLocation": "sitemap.json"
+}

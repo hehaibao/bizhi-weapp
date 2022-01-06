@@ -1,0 +1,41 @@
+.page {
+    background-color: #f3f4f8;
+}
+.top-bar {
+    background: #fff;
+    color: #666;
+}
+
+.operation {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: hsla(0,0%,100%,.8);
+    background-color: rgba(0,0,0,.6);
+}
+
+.operation .base-btn {
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.history-bar {
+    padding: 30rpx;
+}
+
+.history-box {
+    margin: -10rpx -14rpx;
+}
+
+.history-box .text {
+    display: inline-block;
+    font-size: 24rpx;
+    border-radius: 10rpx;
+    color: #999;
+    background-color: #fff;
+    margin: 10rpx 14rpx;
+    padding: 8rpx 20rpx;
+}

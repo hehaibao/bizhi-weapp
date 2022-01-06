@@ -1,0 +1,58 @@
+.page,page {
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-bar {
+    height: 400rpx;
+    overflow: visible;
+}
+
+.swiper-image {
+    height: 360rpx;
+    transform: scale(.9246,.9246) translateZ(0);
+    transition: transform .5s,-webkit-transform .5s;
+    border-radius: 20rpx;
+    overflow: hidden;
+    box-shadow: 5rpx 5rpx 25rpx 0 rgba(0,0,0,.1);
+}
+
+.swiper-image.scale {
+    transform: scale(1,1) translateZ(0);
+}
+
+.menu-bar .li {
+    width: 25%;
+    text-align: center;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.menu-bar image {
+    width: 68rpx;
+    height: 68rpx;
+}
+
+.row-bar {
+    padding: 30rpx 0;
+}
+
+.operation .base-btn {
+    width: 60rpx!important;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: hsla(0,0%,100%,.8);
+    background-color: rgba(0,0,0,.6);
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    right: 10px;
+}
+.operation .base-btn.share-btn {
+    top: 10rpx;
+}
+.operation .base-btn.down-btn {
+    top: 90rpx;
+}

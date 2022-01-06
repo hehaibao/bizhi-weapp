@@ -1,0 +1,6 @@
+<view class="g-class tips-bar" style="{{customStyle}}">
+    <image class="tips-img" src="/images/tips/{{mode}}.png"></image>
+    <view class="onemsg" wx:if="{{onemsg}}">{{onemsg}}</view>
+    <view class="twomsg" wx:if="{{twomsg}}">{{twomsg}}</view>
+    <slot></slot>
+</view>

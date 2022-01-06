@@ -1,0 +1,29 @@
+.tag-scroll {
+    white-space: nowrap;
+}
+
+.tag-bar {
+    padding: 20rpx 0;
+}
+
+.item-tag {
+    display: inline-block;
+    height: 68rpx;
+    line-height: 68rpx;
+    font-size: 24rpx;
+    padding: 0 40rpx;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 0 30rpx;
+    border-radius: 50rpx;
+    background-color: rgba(0,0,0,.5);
+}
+
+.item-tag:last-child {
+    margin-right: 30rpx;
+}
+
+.item-tag.active {
+    color: #fff;
+    background-color: rgba(250,211,2,.8);
+}

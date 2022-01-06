@@ -1,0 +1,5 @@
+<view class="g-class search-bar">
+    <text class="search-icon"></text>
+    <input bindconfirm="inSubmit" bindinput="inChange" class="input-txt" confirmType="search" placeholder="{{placeholder}}" type="text" value="{{keyword}}"></input>
+    <text bindtap="inClear" class="g-cancel opacity" hidden="{{!keyword}}">取 消</text>
+</view>

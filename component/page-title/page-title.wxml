@@ -1,0 +1,7 @@
+<view class="page-title {{isprev?'return-prev':''}} {{align}}" style="{{customStyle}}">
+    <view bindtap="inTap" class="page-icon {{icon}}" wx:if="{{isprev}}"></view>
+    <view bindtap="inTap" class="page-icon" wx:else>
+        <image class="img-icon" src="{{searchIcon}}"></image>
+    </view>
+  {{title}}
+</view>

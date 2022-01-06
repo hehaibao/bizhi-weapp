@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "tips": "/component/tips/tips",
+        "g-page": "/component/g-page/g-page",
+        "g-top": "/component/gui/top/top",
+        "g-search": "/component/gui/search/search"
+    }
+}

@@ -1,0 +1,17 @@
+<view class="g-class page {{isIPX}}">
+    <view class="cus-class custom-top {{titleplain?'plain':''}}" style="padding-top:{{system.statusBarHeight}}px;" wx:if="{{customtop}}">
+        <view class="custom-title {{titlecolor}}">
+            <view bindtap="inGoBack" class="arrow opacity"></view>
+            <view class="title">{{title}}</view>
+        </view>
+    </view>
+    <view class="top-class top-bar" wx:if="{{top}}">
+        <slot name="top"></slot>
+    </view>
+    <view class="content">
+        <slot name="con"></slot>
+    </view>
+    <view class="bom-class bom-bar {{autoX?'auto':''}}" wx:if="{{bom}}">
+        <slot name="bom"></slot>
+    </view>
+</view>

@@ -1,0 +1,2 @@
+<view class="g-class g-loading" hidden="{{!show}}" wx:if="{{mode=='default'}}"></view>
+<view class="g-class g-loading-box" hidden="{{!show}}" wx:if="{{mode=='box'}}"></view>

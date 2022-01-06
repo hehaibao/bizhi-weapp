@@ -1,0 +1,8 @@
+<view class="g-class g-cell g-flex {{isborder?'borbom':''}} {{mode?'g-'+mode:''}} {{error?'g-input-error':''}}">
+    <view class="g-cell-hd h-class {{disabled?'disabled':''}}" wx:if="{{title}}">{{title}}</view>
+    <view class="g-cell-bd b-class">
+        <textarea bindblur="inBlue" bindconfirm="inConfirm" bindfocus="inFocus" bindinput="inChange" class="g-input i-class {{align}} {{disabled?'disabled':''}}" confirmType="{{confirmtype}}" disabled="{{disabled}}" focus="{{focus}}" maxlength="{{maxlength}}" placeholder="{{placeholder}}" placeholderStyle="{{placeholderstyle}}" value="{{value}}" wx:if="{{type==='textarea'}}"></textarea>
+        <input bindblur="inBlue" bindconfirm="inConfirm" bindfocus="inFocus" bindinput="inChange" class="g-input i-class {{align}} {{disabled?'disabled':''}}" confirmType="{{confirmtype}}" disabled="{{disabled}}" focus="{{focus}}" maxlength="{{maxlength}}" placeholder="{{placeholder}}" placeholderStyle="{{placeholderstyle}}" type="{{type}}" value="{{value}}" wx:else></input>
+    </view>
+    <slot></slot>
+</view>

@@ -1,0 +1,12 @@
+<button bindgetuserinfo="inGetUserInfo" class="g-class g-btn {{radius?'g-btn-radius':''}} g-btn-{{type}} g-btn-{{size}} {{plain?'g-btn-plain':''}} {{disabled?'g-btn-disabled':''}}" disabled="{{disabled}}" openType="{{opentype}}" wx:if="{{opentype=='getUserInfo'}}">
+    <slot></slot>
+</button>
+<button bindgetphonenumber="inGerPhoneNumber" class="g-class g-btn {{radius?'g-btn-radius':''}} g-btn-{{type}} g-btn-{{size}} {{plain?'g-btn-plain':''}} {{disabled?'g-btn-disabled':''}}" disabled="{{disabled}}" openType="{{opentype}}" wx:elif="{{opentype=='getPhoneNumber'}}">
+    <slot></slot>
+</button>
+<button bindopensetting="inOpenSetting" class="g-class g-btn {{radius?'g-btn-radius':''}} g-btn-{{type}} g-btn-{{size}} {{plain?'g-btn-plain':''}} {{disabled?'g-btn-disabled':''}}" disabled="{{disabled}}" openType="{{opentype}}" wx:elif="{{opentype=='openSetting'}}">
+    <slot></slot>
+</button>
+<button bindtap="inTap" class="g-class g-btn {{radius?'g-btn-radius':''}} g-btn-{{type}} g-btn-{{size}} {{plain?'g-btn-plain':''}} {{disabled?'g-btn-disabled':''}}" openType="{{opentype}}" wx:else>
+    <slot></slot>
+</button>

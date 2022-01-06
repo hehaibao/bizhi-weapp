@@ -1,0 +1,24 @@
+<view class="page {{isIPX}} {{Android}}">
+    <view class="top-bar">
+        <page-title isprev="{{false}}" title="每日换换" types="1"></page-title>
+        <tag-swiper active="{{tagData.active}}" bindintap="inToggleTag" list="{{tagData.item}}"></tag-swiper>
+    </view>
+    <view class="content">
+        <scroll-view scrollY bindscrolltolower="inScrollTolower" class="scroll-bar" hidden="{{!(tagData.active==index)}}" wx:for="{{tagData.item}}" wx:key="index">
+            <view class="wrap">
+                <view class="flex-bar flex-wrap item-img">
+                    <view class="col-6" wx:for="{{item.list}}" wx:for-index="jndex" wx:for-item="jtem" wx:key="index">
+                        <view class="img-box">
+                            <image webp catchtap="inToSeeImg" class="img opacity" data-src="{{jtem.imageUrl}}" data-title="{{jtem.title?jtem.title:jtem.name}}" data-uuid="{{jtem.uuid}}" mode="aspectFill" src="{{jtem.imageUrl}}"></image>
+                            <view class="operation">
+                                <button class="opacity base-btn share-btn" data-name="{{jtem.name}}" data-src="{{jtem.imageUrl}}" data-uuid="{{jtem.uuid}}" openType="share"><text class="iconfont icon-share"></text> </button>
+                                <view bindtap="inDownImg" class="opacity base-btn down-btn" data-src="{{jtem.imageUrl}}"><text class="iconfont icon-down"></text> </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <g-loading mode="box" show="{{tagData.item[tagData.active].load}}"></g-loading>
+        </scroll-view>
+    </view>
+</view>

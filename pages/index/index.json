@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "page-title": "/component/page-title/page-title",
+        "tag-swiper": "/component/tag-swiper/tag-swiper",
+        "g-loading": "/component/gui/loading/loading",
+        "tips": "/component/tips/tips",
+        "g-page": "/component/g-page/g-page",
+        "g-top": "/component/gui/top/top",
+        "g-search": "/component/gui/search/search"
+    }
+}
