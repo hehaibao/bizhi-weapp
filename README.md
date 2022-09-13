@@ -9,11 +9,11 @@
 ![page-2](https://github.com/hehaibao/bizhi-weapp/blob/main/images/screenshot/2.jpg)
 
 
-#### 另外可以微信搜索小程序 “每日换换”，查看用uni-app及uniCloud二次开发的壁纸程序（支持流量主，含后台）。
+#### 另外可以微信搜索小程序 “创优图库”，查看用uni-app及uniCloud二次开发的壁纸程序（支持流量主，含后台）。
 
 欢迎体验，小程序码如下：
 
-![每日换换小程序](https://github.com/hehaibao/bizhi-weapp/blob/main/images/screenshot/qr.jpg)
+![创优图库小程序](https://github.com/hehaibao/bizhi-weapp/blob/main/images/screenshot/qr.jpg)
 
 有需要的话，可以联系QQ: 964279742
 
